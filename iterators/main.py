@@ -12,8 +12,29 @@ class MyIterator:
             raise StopIteration
 
 
+def get_double_gen():
+    e = 2
+    while e < 300:
+        yield e
+        e *= 2
+
+
+def get_double_gen2():
+    e = 2
+    while True:
+        yield e
+        e *= 2
+        if e >= 300:
+            return
+
+
 def main():
+    print("Iterators with class MyIterator")
     for x in MyIterator():
+        print(x)
+
+    print("\nIterators with function get_double_gen")
+    for x in get_double_gen():
         print(x)
 
 
