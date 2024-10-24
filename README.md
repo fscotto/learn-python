@@ -1,2 +1,3 @@
-# learn-python
-Repository con test per l'apprendimento e approfondimenti sul linguaggio Python
+# Learn Python
+
+A repository of tests to help you learn and gain insight into the Python language.
